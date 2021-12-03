@@ -1,0 +1,10 @@
+services:
+  redis:
+    command: ["redis-server"]
+    # , "/usr/local/etc/redis/redis.conf"]
+    # , "--requirepass", "${REDIS_PASSWORD}"
+    ports:
+      - "${REDIS_DEV_PORT}:6379"
+    # volumes:
+      # - ${REDIS_DB_VOLUME}:/data
+      # -  ${REDIS_CONFIG_FILE}:/usr/local/etc/redis/redis.conf

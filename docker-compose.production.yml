@@ -1,0 +1,5 @@
+services:
+  redis:
+    ports:
+      - "${REDIS_PROD_PORT}:6379"
+

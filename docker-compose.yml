@@ -1,0 +1,6 @@
+version: ${COMPOSE_API_VERSION}
+services:
+  redis:
+    build: ./services/redis
+    image: ${REGISTRY}/${APP_NAME}:${REDIS_IMG_TAG}
+    container_name: "${APP_NAME}_redis"
